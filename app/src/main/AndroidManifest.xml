@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentApp">
         <activity
+            android:name=".EditStudentDetails"
+            android:exported="false" />
+        <activity
+            android:name=".StudentDetails"
+            android:exported="false" />
+        <activity
+            android:name=".AddStudentActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
