@@ -4,31 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:clickable="true"
-    android:background="?attr/selectableItemBackground"
     tools:context=".MainActivity">
 
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/add_student_floating_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="@+id/student_list_v"
-        app:layout_constraintEnd_toEndOf="@+id/student_list_v"
-        app:srcCompat="@android:drawable/ic_menu_add"
-        tools:ignore="MissingConstraints" />
-
-    <ListView
-        android:id="@+id/student_list_v"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/main_navhost"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:defaultNavHost="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true"
+        app:navGraph="@navigation/nav_graph"
+        android:focusable="true" />
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

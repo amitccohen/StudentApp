@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentApp">
         <activity
-            android:name=".EditStudentDetails"
+            android:name=".Activities.EditStudentDetails"
             android:exported="false" />
         <activity
-            android:name=".StudentDetails"
+            android:name=".Activities.StudentDetails"
             android:exported="false" />
         <activity
-            android:name=".AddStudentActivity"
+            android:name=".Activities.AddStudentActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
